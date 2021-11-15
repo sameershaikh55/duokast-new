@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+* {
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+	font-family: "PT Sans", sans-serif;
+}
+
+// VARIABLES START
+$color1: #00c4cc;
+$color2: #9837ff;
+$color3: #360070;
+// VARIABLES END
+
+// GLOBAL START
+html {
+	width: 100%;
+	font-size: 100%;
+	overflow-x: hidden;
+	font-family: Louis_George_Cafe_R;
+}
+
+// @media screen and (max-width: 992px) {
+// 	html {
+// 		font-size: 100%;
+// 	}
+// }
+// @media screen and (max-width: 668px) {
+// 	html {
+// 		font-size: 92%;
+// 	}
+// }
+// @media screen and (max-width: 575px) {
+// 	html {
+// 		font-size: 88%;
+// 	}
+// }
+// @media screen and (max-width: 475px) {
+// 	html {
+// 		font-size: 84%;
+// 	}
+// }
+// @media screen and (max-width: 380px) {
+// 	html {
+// 		font-size: 80%;
+// 	}
+// }
+// @media screen and (max-width: 280px) {
+// 	html {
+// 		font-size: 76%;
+// 	}
+// }
+
+.pointer {
+	cursor: pointer;
+}
+
+.f8 {
+	font-size: 0.5rem;
+}
+
+.f10 {
+	font-size: 0.625rem;
+}
+
+.f12 {
+	font-size: 0.75rem;
+}
+
+.f14 {
+	font-size: 0.875rem;
+}
+
+.f15 {
+	font-size: 0.938rem;
+}
+
+.f16 {
+	font-size: 1rem;
+}
+
+.f18 {
+	font-size: 1.125rem;
+}
+
+.f20 {
+	font-size: 1.25rem;
+}
+
+.f22 {
+	font-size: 1.375rem;
+}
+
+.f24 {
+	font-size: 1.5rem;
+}
+
+.f34 {
+	font-size: 2.125rem;
+}
+
+.f32 {
+	font-size: 2rem;
+}
+
+.f30 {
+	font-size: 1.875rem;
+}
+
+.f35 {
+	font-size: 2.125rem;
+	line-height: 57px;
+}
+
+.f50 {
+	font-size: 3.125rem;
+	line-height: 65px;
+}
+
+.f64 {
+	font-size: 4rem;
+	line-height: 71px;
+}
+
+.fw400 {
+	font-weight: 400;
+}
+
+.fw500 {
+	font-weight: 500;
+}
+
+.fw600 {
+	font-weight: 600;
+}
+
+.fw700 {
+	font-weight: 700;
+}
+
+.fw800 {
+	font-weight: 800;
+}
+
+.fw900 {
+	font-weight: 900;
+}
+
+// COLORS
+.color1 {
+	color: $color1;
+}
+
+.bg_color1 {
+	background-color: $color1;
+}
+
+.color2 {
+	color: $color2;
+}
+
+.bg_color2 {
+	background-color: $color2;
+}
+
+.color3 {
+	color: $color3;
+}
+
+.bg_color3 {
+	background-color: $color3;
+}
+
+.page_container {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page_container_slider {
+	max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// HEADER START
+.header_container {
+	position: fixed;
+	height: 100px;
+	background-color: transparent;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 20;
+	transition: 0.5s;
+
+	.logo_container {
+		width: 150px;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	ul {
+		li {
+			a {
+				text-decoration: none;
+				color: #000000;
+				transition: 0.6s;
+
+				&:hover {
+					font-weight: 600;
+				}
+			}
+		}
+	}
+
+	.navigation {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.buttons_cont {
+		button {
+			background-color: #00c4cc;
+			color: #fff;
+			border: none;
+			width: 100px;
+			height: 40px;
+			border-radius: 50px;
+		}
+	}
+}
+
+.header_container.sticky {
+	height: 70px;
+	background-color: #fff;
+}
+// HEADER END
+
+// HERO START
+.hero_container {
+	background: url("../assets/images/hero.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 10rem;
+
+	.hero_img {
+		max-width: 900px;
+	}
+}
+// HERO END
+
+// BRAND START
+.brand_container {
+	padding: 7rem 0rem 8rem 0rem;
+}
+// BRAND END
+
+// SERVOCES START
+.services_container {
+	background: linear-gradient(
+			rgba(255, 255, 255, 0.7),
+			rgba(255, 255, 255, 0.7)
+		),
+		url("../assets/images/hero.svg");
+	width: 100%;
+	padding: 8rem 0rem;
+
+	.row {
+		align-items: baseline;
+	}
+
+	.service_card {
+		background-color: #190034;
+		min-height: 290px;
+		border-radius: 20px;
+	}
+
+	.service_card2 {
+		background-color: #190034;
+		border-radius: 20px;
+	}
+}
+// SERVOCES END
+
+// UNDER SERVOCES START
+.under_service_container {
+	padding: 8rem 0rem;
+	background: url("../assets/images/under_service.svg");
+	width: 100%;
+}
+// UNDER SERVOCES END
+
+// PROCESS CONTAINER START
+.process_container {
+	padding: 0rem 0rem 8rem 0rem;
+
+	.text_content {
+		margin-top: -3rem;
+	}
+
+	img {
+		margin-top: -0.6rem !important;
+	}
+
+	._card {
+		min-height: 330px;
+	}
+
+	.yellow_card {
+		min-height: 330px;
+		background-color: #ff9900;
+		border-radius: 15px;
+		box-shadow: 1px 1px 30px #ff9900;
+	}
+}
+// PROCESS CONTAINER END
+
+// HOME SLIDER START
+.home_slider_container {
+	padding: 8rem 0rem;
+	background-color: #f5f6f9;
+
+	.mySwiper {
+		padding: 0rem 0rem 5rem 0rem;
+	}
+
+	.swiper-pagination-bullet-active {
+		background: #9837ff;
+	}
+}
+// HOME SLIDER END
+
+// PRICING START
+.prices_container {
+	padding: 8rem 0rem;
+
+	.switch {
+		position: relative;
+		display: inline-block;
+		width: 60px;
+		height: 34px;
+	}
+
+	.switch input {
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+
+	.slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #eeeeee;
+		-webkit-transition: 0.4s;
+		transition: 0.4s;
+		border-radius: 50px;
+	}
+
+	.slider:before {
+		position: absolute;
+		content: "";
+		height: 26px;
+		width: 26px;
+		left: 4px;
+		bottom: 4px;
+		background-color: $color2;
+		-webkit-transition: 0.4s;
+		border-radius: 50%;
+		transition: 0.4s;
+	}
+
+	input:checked + .slider {
+		background-color: #eeeeee;
+	}
+
+	input:focus + .slider {
+		box-shadow: 0 0 1px #eeeeee;
+	}
+
+	input:checked + .slider:before {
+		-webkit-transform: translateX(26px);
+		-ms-transform: translateX(26px);
+		transform: translateX(26px);
+	}
+
+	/* Rounded sliders */
+	.slider.round {
+		border-radius: 34px;
+	}
+
+	.slider.round:before {
+		border-radius: 50%;
+	}
+
+	.price_card {
+		button {
+			background-color: $color1;
+		}
+	}
+
+	.price_card2 {
+		border-top: 5px solid $color1;
+		border-radius: 6px;
+
+		button {
+			background-color: $color1;
+		}
+	}
+
+	.price_card {
+		min-height: 695px;
+	}
+
+	.green_bg {
+		background-color: #2bd67b;
+	}
+}
+// PRICING END
+
+// FAQ START
+.faq_container {
+	margin-top: -1rem;
+	padding: 8rem 0rem;
+	background-color: #131f2d;
+
+	.custom_accordion {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.178);
+	}
+}
+// FAQ END
+
+// FOOTER START
+.footer_container {
+	background-color: #131f2d;
+
+	.under_logo {
+		color: #687497;
+	}
+
+	ul {
+		li {
+			a {
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.copy_write {
+		margin-top: 2rem;
+		padding: 2rem 0rem 1rem 0rem;
+		border-top: 1px solid #eeeeee27;
+	}
+}
+// FOOTER END
