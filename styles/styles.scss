@@ -11,6 +11,7 @@
 $color1: #00c4cc;
 $color2: #9837ff;
 $color3: #360070;
+$color4: #81838c;
 // VARIABLES END
 
 // GLOBAL START
@@ -166,6 +167,10 @@ html {
 
 .color3 {
 	color: $color3;
+}
+
+.color4 {
+	color: $color4;
 }
 
 .bg_color3 {
@@ -510,7 +515,7 @@ html {
 // FAQ START
 .faq_container {
 	margin-top: -1rem;
-	padding: 8rem 0rem;
+	padding: 4rem 0rem 0rem 0rem;
 	background-color: #131f2d;
 
 	.custom_accordion {
@@ -521,6 +526,7 @@ html {
 
 // FOOTER START
 .footer_container {
+	padding: 4rem 0rem 0rem 0rem;
 	background-color: #131f2d;
 
 	.under_logo {
@@ -544,6 +550,155 @@ html {
 }
 // FOOTER END
 
+// ABOUT US START
+.aboutHero_container {
+	background: url("../assets/images/aboutHero.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 12rem 0rem;
+
+	.button_container {
+		button {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			div {
+				width: 10px;
+				height: 15px;
+				border: 2px solid #fff;
+			}
+		}
+		button:nth-child(1) {
+			background: $color2;
+		}
+		button:nth-child(2) {
+			background: $color1;
+		}
+	}
+
+	.text-center {
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.bread_content {
+		position: absolute;
+		bottom: 1rem;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+// ABOUT US END
+
+// ABOUT US SECTIONS START
+.aboutSec_container {
+	margin-top: 6rem;
+	padding: 8rem 0rem;
+	background-color: #f7f9fb;
+}
+// ABOUT US SECTIONS END
+
+// TEAM START
+.team_container {
+	padding: 8rem 0rem;
+}
+// TEAM END
+
+// CONTACT START
+.contact_container {
+	background-color: #9837ff;
+	border-radius: 30px;
+}
+// CONTACT END
+
+// STATES START
+.states_container {
+	padding: 8rem 0rem;
+
+	.inner_states {
+		background: #f6f4f9;
+		border-radius: 20px;
+	}
+}
+// STATES END
+
+// UNDER STATES START
+.under_states_container {
+	padding: 0rem 0rem 8rem 0rem;
+}
+// UNDER STATES END
+
+// CONTACT START
+.contact_form_container {
+	padding: 8rem 0rem;
+
+	.form-control:focus {
+		border-color: $color2;
+		box-shadow: 0 0 0 0.25rem rgba(152, 55, 255, 0.25);
+	}
+}
+// CONTACT END
+
+// CONTACT CARD START
+.contact_card_container {
+	padding-bottom: 8rem;
+
+	.card_contact {
+		p {
+			color: #687497;
+		}
+	}
+
+	button {
+		box-shadow: 1px 1px 10px $color1;
+	}
+}
+// CONTACT CARD END
+
+// BLOG LIST START
+.blog_list_container {
+	padding: 8rem 0rem;
+
+	.blog_card {
+		border-radius: 10px;
+	}
+
+	.paginate {
+		ul {
+			li {
+				font-size: 1.5rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 50%;
+			}
+			li:nth-child(1) {
+				border: 1px solid $color2;
+				background-color: $color2;
+				width: 40px;
+				height: 40px;
+				color: #fff;
+			}
+			li:nth-child(2) {
+				border: 1px solid #cccccc;
+				border-radius: 50%;
+				width: 40px;
+				height: 40px;
+			}
+			li:nth-child(3) {
+				border: 1px solid #cccccc;
+				border-radius: 50%;
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+}
+// BLOG LIST END
+
 // MEDIA START
 @media screen and (max-width: 992px) {
 }
@@ -559,7 +714,10 @@ html {
 		padding: 6rem 0rem;
 	}
 	.faq_container {
-		padding: 6rem 0rem;
+		padding: 3rem 0rem 0rem 0rem;
+	}
+	.footer_container {
+		padding: 3rem 0rem 0rem 0rem;
 	}
 }
 // MEDIA END

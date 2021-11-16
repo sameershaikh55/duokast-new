@@ -34,7 +34,7 @@ const Prices = () => {
 								</div>
 							</div>
 
-							<div className="row gy-5 gx-2 gx-md-5">
+							<div className="row justify-content-center gy-5 gx-2 gx-md-5">
 								<div className="col-12 col-sm-6 col-md-4">
 									<div className="price_card shadow-sm pt-4 pb-5 px-4">
 										<p>Free</p>

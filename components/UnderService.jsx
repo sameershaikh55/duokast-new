@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import unService from "../assets/images/unService.svg";
 
-const UnderService = () => {
+const UnderService = ({ about }) => {
 	return (
-		<div className="under_service_container">
+		<div className={`${(!about && "under_service_container") || ""}`}>
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
