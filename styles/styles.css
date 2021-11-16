@@ -673,6 +673,62 @@ html {
   border-radius: 10px;
 }
 
+.sign_up_container {
+  background-color: #f4f6fc;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sign_up_container .inner_sign {
+  background-color: #fff;
+  height: 700px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sign_up_container .form_sec {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sign_up_container .share_ {
+  padding: 0.8rem;
+  border: 1px solid #eeee;
+  border-radius: 50px;
+}
+
+.sign_up_container label {
+  color: #81838c;
+}
+
+.sign_up_container .form-control:focus {
+  border-color: #9837ff;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(152, 55, 255, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(152, 55, 255, 0.25);
+}
+
+.sign_up_container input {
+  height: 44px !important;
+  background-color: #e0e7ff34;
+}
+
+@media screen and (max-width: 768px) {
+  .sign_up_container .inner_sign {
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .services_container .service_card {
     min-height: 200px;
