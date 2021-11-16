@@ -699,6 +699,16 @@ html {
 }
 // BLOG LIST END
 
+// BLOG START
+.blog_body_container {
+	padding: 12rem 0rem 8rem 0rem;
+
+	.blog_card {
+		border-radius: 10px;
+	}
+}
+// BLOG END
+
 // MEDIA START
 @media screen and (max-width: 992px) {
 }

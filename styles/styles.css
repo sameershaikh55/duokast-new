@@ -665,6 +665,14 @@ html {
   height: 40px;
 }
 
+.blog_body_container {
+  padding: 12rem 0rem 8rem 0rem;
+}
+
+.blog_body_container .blog_card {
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 575px) {
   .services_container .service_card {
     min-height: 200px;
