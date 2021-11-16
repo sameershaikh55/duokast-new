@@ -100,86 +100,90 @@ const PricingTable = () => {
 						<div className="col-11 col-md-12 mx-auto">
 							<h1 className="text-center">价钱</h1>
 
-							<div className="container-fluid mt-5 pt-5">
-								<div className="row">
-									<div className="col-12">
-										<table className="w-100">
-											<tbody>
-												<tr>
-													<td className="pt-4"></td>
-													<td className="pt-4 text-center">基本流光</td>
-													<td className="pt-4 text-center bg_color5 text-white top_rounded">
-														<button className="bg_color1 px-3 border-0 py-1 text-white rounded-pill">
-															专业流媒体
-														</button>
-													</td>
-													<td className="pt-4 text-center">商业的</td>
-												</tr>
-												<tr>
-													<td className="pt-4 pb-1"></td>
-													<td className="pt-4 pb-1 text-center h2">¥282</td>
-													<td className="pt-4 pb-1 text-center bg_color5 h2 text-white">
-														¥871
-													</td>
-													<td className="pt-4 pb-1 text-center h2">¥871</td>
-												</tr>
-												<tr>
-													<td className="pb-5"></td>
-													<td className="pb-5 text-center">Per month</td>
-													<td className="pb-5 text-center bg_color5 text-white">
-														Per month
-													</td>
-													<td className="pb-5 text-center">Per month</td>
-												</tr>
-												{data.map((prev, i) => {
-													return (
-														<tr key={i}>
-															<td className="border-bottom py-2">{prev.t}</td>
-															<td className="border-bottom py-2 text-center">
-																{(prev.t1 && <Image src={tick} alt="" />) || ""}
-															</td>
-															<td className="border-bottom py-2 text-center bg_color5 text-white">
-																{(prev.t2 && <Image src={tick2} alt="" />) ||
-																	""}
-															</td>
-															<td className="border-bottom py-2 text-center">
-																{(prev.t3 && <Image src={tick} alt="" />) || ""}
-															</td>
-														</tr>
-													);
-												})}
-												<tr>
-													<td className="pt-4"></td>
-													<td className="pt-4 text-center pb-4 d-flex align-items-center justify-content-center">
-														<button className="bg_color2 border-0 px-4 py-2 text-white rounded-pill d-flex align-items-center justify-content-center text-center">
-															Get started{" "}
-															<FiArrowRightCircle
-																fontSize="1.3rem"
-																className="ms-2"
-															/>
-														</button>
-													</td>
-													<td className="pt-4 text-center pb-4 bg_color5 bottom_rounded">
-														<button className="color1 bg_color3 border-0 px-4 py-2 rounded-pill">
-															Get started{" "}
-															<FiArrowRightCircle
-																fontSize="1.3rem"
-																className="ms-2"
-															/>
-														</button>
-													</td>
-													<td className="pt-4 text-center pb-4 d-flex align-items-center justify-content-center">
-														<button className="bg_color2 border-0 px-4 py-2 text-white rounded-pill d-flex align-items-center justify-content-center text-center">
-															Get started{" "}
-															<FiArrowRightCircle
-																fontSize="1.3rem"
-																className="ms-2"
-															/>
-														</button>
-													</td>
-												</tr>
-											</tbody>
-										</table>
+							<div style={{ overflowX: "auto", width: "100%" }}>
+								<div className="inner_pricing_table_container container-fluid mt-5 pt-5">
+									<div className="row">
+										<div className="col-12">
+											<table className="w-100">
+												<tbody>
+													<tr>
+														<td className="pt-4"></td>
+														<td className="pt-4 text-center">基本流光</td>
+														<td className="pt-4 text-center bg_color5 text-white top_rounded">
+															<button className="bg_color1 px-3 border-0 py-1 text-white rounded-pill">
+																专业流媒体
+															</button>
+														</td>
+														<td className="pt-4 text-center">商业的</td>
+													</tr>
+													<tr>
+														<td className="pt-4 pb-1"></td>
+														<td className="pt-4 pb-1 text-center h2">¥282</td>
+														<td className="pt-4 pb-1 text-center bg_color5 h2 text-white">
+															¥871
+														</td>
+														<td className="pt-4 pb-1 text-center h2">¥871</td>
+													</tr>
+													<tr>
+														<td className="pb-5"></td>
+														<td className="pb-5 text-center">Per month</td>
+														<td className="pb-5 text-center bg_color5 text-white">
+															Per month
+														</td>
+														<td className="pb-5 text-center">Per month</td>
+													</tr>
+													{data.map((prev, i) => {
+														return (
+															<tr key={i}>
+																<td className="border-bottom py-2">{prev.t}</td>
+																<td className="border-bottom py-2 text-center">
+																	{(prev.t1 && <Image src={tick} alt="" />) ||
+																		""}
+																</td>
+																<td className="border-bottom py-2 text-center bg_color5 text-white">
+																	{(prev.t2 && <Image src={tick2} alt="" />) ||
+																		""}
+																</td>
+																<td className="border-bottom py-2 text-center">
+																	{(prev.t3 && <Image src={tick} alt="" />) ||
+																		""}
+																</td>
+															</tr>
+														);
+													})}
+													<tr>
+														<td className="pt-4"></td>
+														<td className="pt-4 text-center pb-4 d-flex align-items-center justify-content-center">
+															<button className="bg_color2 border-0 px-4 py-2 text-white rounded-pill d-flex align-items-center justify-content-center text-center">
+																Get started{" "}
+																<FiArrowRightCircle
+																	fontSize="1.3rem"
+																	className="ms-2"
+																/>
+															</button>
+														</td>
+														<td className="pt-4 text-center pb-4 bg_color5 bottom_rounded">
+															<button className="color1 bg_color3 border-0 px-4 py-2 rounded-pill">
+																Get started{" "}
+																<FiArrowRightCircle
+																	fontSize="1.3rem"
+																	className="ms-2"
+																/>
+															</button>
+														</td>
+														<td className="pt-4 text-center pb-4 d-flex align-items-center justify-content-center">
+															<button className="bg_color2 border-0 px-4 py-2 text-white rounded-pill d-flex align-items-center justify-content-center text-center">
+																Get started{" "}
+																<FiArrowRightCircle
+																	fontSize="1.3rem"
+																	className="ms-2"
+																/>
+															</button>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
 									</div>
 								</div>
 							</div>

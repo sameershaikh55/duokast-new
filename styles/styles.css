@@ -745,6 +745,12 @@ html {
   margin-top: -1.1rem;
   padding: 8rem 0rem 8rem 0rem;
   background-color: #f5f6f9;
+  width: 100%;
+}
+
+.pricing_table_container .inner_pricing_table_container {
+  min-width: 750px;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
