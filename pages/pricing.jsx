@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import States from "../components/States";
 import UnderStates from "../components/UnderStates";
 import AboutContact from "../components/AboutContact";
+import PricingTable from "../components/PricingTable";
 
 const pricing = () => {
 	return (
@@ -15,6 +16,7 @@ const pricing = () => {
 				<AboutHero pricing />
 				<Prices />
 				<Network />
+				<PricingTable />
 				<States />
 				<UnderStates />
 				<AboutContact />

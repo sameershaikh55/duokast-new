@@ -1,6 +1,8 @@
 import React from "react";
+import Image from "next/image";
 import { BsFacebook } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
+import loginImg from "../assets/images/login.PNG";
 
 const login = () => {
 	return (
@@ -59,8 +61,8 @@ const login = () => {
 										</div>
 									</div>
 								</div>
-								<div className="d-none d-md-block col-4 h-100">
-									<div className="bg_color2 w-100 h-100"></div>
+								<div className="bg_color2 d-none d-md-block col-4 h-100">
+									<Image src={loginImg} alt="" />
 								</div>
 							</div>
 						</div>

@@ -21,9 +21,11 @@ const Header = ({ ClickEvent, isOpen }) => {
 				<div className="container-fluid">
 					<div className="d-flex align-items-center justify-content-between">
 						{/* LOGO START */}
-						<div className="logo_container mt-1">
-							<Image src={logo} alt="" />
-						</div>
+						<Link href="/">
+							<div className="pointer logo_container mt-1">
+								<Image src={logo} alt="" />
+							</div>
+						</Link>
 
 						<div className="d-block d-md-none">
 							<GiHamburgerMenu
@@ -45,7 +47,7 @@ const Header = ({ ClickEvent, isOpen }) => {
 									<Link href="/about">About</Link>
 								</li>
 								<li>
-									<Link href="/price">Price</Link>
+									<Link href="/pricing">Price</Link>
 								</li>
 							</ul>
 						</div>

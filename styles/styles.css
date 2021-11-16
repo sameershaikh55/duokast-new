@@ -169,8 +169,20 @@ html {
   color: #81838c;
 }
 
+.bg_color5 {
+  background-color: #101c3d;
+}
+
 .bg_color3 {
   background-color: #360070;
+}
+
+.top_rounded {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.bottom_rounded {
+  border-radius: 0px 0px 10px 10px;
 }
 
 .page_container {
@@ -688,6 +700,12 @@ html {
           align-items: center;
 }
 
+.sign_up_container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+}
+
 .sign_up_container .inner_sign {
   background-color: #fff;
   height: 700px;
@@ -721,6 +739,12 @@ html {
 .sign_up_container input {
   height: 44px !important;
   background-color: #e0e7ff34;
+}
+
+.pricing_table_container {
+  margin-top: -1.1rem;
+  padding: 8rem 0rem 8rem 0rem;
+  background-color: #f5f6f9;
 }
 
 @media screen and (max-width: 768px) {

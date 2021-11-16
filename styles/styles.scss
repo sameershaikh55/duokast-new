@@ -12,6 +12,7 @@ $color1: #00c4cc;
 $color2: #9837ff;
 $color3: #360070;
 $color4: #81838c;
+$color5: #101c3d;
 // VARIABLES END
 
 // GLOBAL START
@@ -173,8 +174,20 @@ html {
 	color: $color4;
 }
 
+.bg_color5 {
+	background-color: $color5;
+}
+
 .bg_color3 {
 	background-color: $color3;
+}
+
+.top_rounded {
+	border-radius: 10px 10px 0px 0px;
+}
+
+.bottom_rounded {
+	border-radius: 0px 0px 10px 10px;
 }
 
 .page_container {
@@ -718,6 +731,11 @@ html {
 	justify-content: center;
 	align-items: center;
 
+	img {
+		object-fit: cover;
+		height: 100vh;
+	}
+
 	.inner_sign {
 		background-color: #fff;
 		height: 700px;
@@ -753,6 +771,14 @@ html {
 	}
 }
 // SIGN UP END
+
+// PRICING TABLE START
+.pricing_table_container {
+	margin-top: -1.1rem;
+	padding: 8rem 0rem 8rem 0rem;
+	background-color: #f5f6f9;
+}
+// PRICING TABLE END
 
 // MEDIA START
 @media screen and (max-width: 992px) {
