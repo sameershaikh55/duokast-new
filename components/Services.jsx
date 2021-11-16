@@ -58,31 +58,35 @@ const Services = () => {
 		<div className="services_container">
 			<div className="page_container">
 				<div className="container-fluid">
-					<div className="text-center">
-						<h1 className="fw-bold">为什么选择duokast</h1>
-						<p>你可以用一台设备向多个平台直播视频。</p>
-					</div>
+					<div className="row">
+						<div className="col-11 col-md-12 mx-auto">
+							<div className="text-center">
+								<h1 className="fw-bold">为什么选择duokast</h1>
+								<p>你可以用一台设备向多个平台直播视频。</p>
+							</div>
 
-					<div className="row mt-1 gy-5 justify-content-center">
-						{services.map((prev, i) => {
-							return (
-								<div key={i} className="col-3">
-									<div className="service_card text-white p-4">
-										<Image src={prev.img} alt="" />
-										<h5 className="mt-4 fw-bold">{prev.t}</h5>
-										<p className="mt-4">{prev.p}</p>
+							<div className="row mt-1 gy-5 justify-content-center">
+								{services.map((prev, i) => {
+									return (
+										<div key={i} className="col-12 col-sm-6 col-md-4 col-lg-3">
+											<div className="service_card text-white p-4">
+												<Image src={prev.img} alt="" />
+												<h5 className="mt-4 fw-bold">{prev.t}</h5>
+												<p className="mt-4">{prev.p}</p>
+											</div>
+										</div>
+									);
+								})}
+								<div className="col-12 d-flex justify-content-center">
+									<div className="service_card2 p-3 d-flex align-items-center">
+										<Image src={i9} alt="" />
+										<div className="text-white d-flex">
+											<h5 className="mb-0 ms-3 fw-bold">简单</h5>
+											<p className="mb-0 ms-4">
+												我们使直播变得更容易。 直接在浏览器运行，轻松自如。
+											</p>
+										</div>
 									</div>
-								</div>
-							);
-						})}
-						<div className="col-12 d-flex justify-content-center">
-							<div className="service_card2 p-3 d-flex align-items-center">
-								<Image src={i9} alt="" />
-								<div className="text-white d-flex">
-									<h5 className="mb-0 ms-3 fw-bold">简单</h5>
-									<p className="mb-0 ms-4">
-										我们使直播变得更容易。 直接在浏览器运行，轻松自如。
-									</p>
 								</div>
 							</div>
 						</div>

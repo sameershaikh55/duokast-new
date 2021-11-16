@@ -14,10 +14,10 @@ const Brand = () => {
 		<div className="brand_container">
 			<div className="page_container">
 				<div className="container-fluid">
-					<div className="row align-items-center gx-5">
+					<div className="row gy-3 justify-content-center align-items-center gx-4 gx-md-5">
 						{logo.map((prev, i) => {
 							return (
-								<div key={i} className="col-2">
+								<div key={i} className="col-4 col-md-3 col-lg-2">
 									<Image className="w-100" src={prev} alt="" />
 								</div>
 							);

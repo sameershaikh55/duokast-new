@@ -33,19 +33,23 @@ const Faq = () => {
 		<div className="faq_container">
 			<div className="page_container">
 				<div className="container-fluid">
-					<div className="mb-5 text-white text-center">
-						<h1>经常问的问题</h1>
-						<p>在这里找不到。？看看我们的帮助中心</p>
-					</div>
+					<div className="row">
+						<div className="col-11 col-md-12 mx-auto">
+							<div className="mb-5 text-white text-center">
+								<h1>经常问的问题</h1>
+								<p>在这里找不到。？看看我们的帮助中心</p>
+							</div>
 
-					<div className="row gx-5">
-						{faqData.map((prev, i) => {
-							return (
-								<div className="col-6" key={i}>
-									<Accordion t={prev.t} p={prev.p} />
-								</div>
-							);
-						})}
+							<div className="row gx-5">
+								{faqData.map((prev, i) => {
+									return (
+										<div className="col-12 col-md-6" key={i}>
+											<Accordion t={prev.t} p={prev.p} />
+										</div>
+									);
+								})}
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

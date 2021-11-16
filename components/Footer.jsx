@@ -76,46 +76,55 @@ const Footer = () => {
 			<div className="page_container">
 				<div className="container-fluid">
 					<div className="row">
-						<div className="col-6">
-							<Image src={logow} alt="" />
-							<p className="under_logo mt-3 w-75">
-								Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-								accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-								quae ab illo inventore veritatis et quasi
-							</p>
-						</div>
-						<div className="col-6">
-							<div className="row">
-								{list1.map((prev, i) => {
-									return (
-										<div key={i} className="col-4">
-											<ul>
-												{prev.list.map((prev2, i2) => {
-													return (
-														<li key={i2} className="mt-2">
-															{(i2 !== 0 && (
-																<Link
-																	className="pointer text-white text-decoration-none f18"
-																	href={prev2.l}
-																>
-																	{prev2.t}
-																</Link>
-															)) || <h4 className="color1">{prev2.t}</h4>}
-														</li>
-													);
-												})}
-											</ul>
+						<div className="col-11 col-md-12 mx-auto">
+							<div className="row gy-5">
+								<div className="col-12 col-md-6">
+									<Image src={logow} alt="" />
+									<div className="row">
+										<p className="under_logo mt-3 col-md-8">
+											Sed ut perspiciatis unde omnis iste natus error sit
+											voluptatem accusantium doloremque laudantium, totam rem
+											aperiam, eaque ipsa quae ab illo inventore veritatis et
+											quasi
+										</p>
+									</div>
+								</div>
+								<div className="col-12 col-md-6">
+									<div className="row">
+										{list1.map((prev, i) => {
+											return (
+												<div key={i} className="col-4">
+													<ul className="list-unstyled">
+														{prev.list.map((prev2, i2) => {
+															return (
+																<li key={i2} className="mt-2">
+																	{(i2 !== 0 && (
+																		<Link
+																			className="pointer text-white text-decoration-none f18"
+																			href={prev2.l}
+																		>
+																			{prev2.t}
+																		</Link>
+																	)) || <h4 className="color1">{prev2.t}</h4>}
+																</li>
+															);
+														})}
+													</ul>
+												</div>
+											);
+										})}
+									</div>
+								</div>
+								<div className="col-12">
+									<div className="copy_write d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between">
+										<p className="mb-0 text-white">
+											2020 Copyright, All rights Reservecd
+										</p>
+										<div className="mt-2 mt-md-0">
+											<Image src={i1} alt="" /> <Image src={i2} alt="" />{" "}
+											<Image src={i3} alt="" /> <Image src={i4} alt="" />
 										</div>
-									);
-								})}
-							</div>
-						</div>
-						<div className="col-12">
-							<div className="copy_write d-flex justify-content-between">
-								<p className="mb-0 text-white">2020 Copyright, All rights Reservecd</p>
-								<div>
-									<Image src={i1} alt="" /> <Image src={i2} alt="" />{" "}
-									<Image src={i3} alt="" /> <Image src={i4} alt="" />
+									</div>
 								</div>
 							</div>
 						</div>

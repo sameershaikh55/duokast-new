@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
-import logo from "../assets/images/logo.svg";
+import logo from "../../assets/images/logo.svg";
 import Image from "next/image";
+import { GiHamburgerMenu } from "react-icons/gi";
 
-const Header = () => {
+const Header = ({ ClickEvent, isOpen }) => {
 	useEffect(() => {
 		window.addEventListener("scroll", function () {
 			var header = document.querySelector(".header_container");
@@ -17,14 +18,22 @@ const Header = () => {
 	return (
 		<div className="header_container">
 			<div className="page_container w-100">
-				<div className="container-fluid w-100">
+				<div className="container-fluid">
 					<div className="d-flex align-items-center justify-content-between">
 						{/* LOGO START */}
 						<div className="logo_container mt-1">
 							<Image src={logo} alt="" />
 						</div>
 
-						<div className="navigation">
+						<div className="d-block d-md-none">
+							<GiHamburgerMenu
+								onClick={ClickEvent}
+								fontSize="2rem"
+								color="#000"
+							/>
+						</div>
+
+						<div className="navigation d-none d-md-block">
 							<ul className="d-flex align-items-center list-unstyled mb-0">
 								<li>
 									<Link href="/">Home</Link>
@@ -41,7 +50,7 @@ const Header = () => {
 							</ul>
 						</div>
 
-						<div className="buttons_cont d-flex">
+						<div className="buttons_cont d-none d-md-flex">
 							<button>English</button>
 							<button className="ms-3">Login</button>
 						</div>

@@ -7,10 +7,14 @@ const Network = () => {
 		<div className="network_container">
 			<div className="page_container">
 				<div className="container-fluid">
-					<h1 className="mb-5 text-center">强大的duokast功能</h1>
+					<div className="row">
+						<div className="col-11 col-md-12 mx-auto">
+							<h1 className="mb-5 text-center">强大的duokast功能</h1>
 
-					<div>
-						<Image className="w-100" src={network} alt="" />
+							<div>
+								<Image className="w-100" src={network} alt="" />
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

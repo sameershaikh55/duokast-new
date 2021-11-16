@@ -35,34 +35,38 @@ const Process = () => {
 		<div className="process_container">
 			<div className="page_container">
 				<div className="container-fluid">
-					<div className="text-center">
-						<h1 className="fw-bold">我们提供什么</h1>
-						<p>
-							Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem
-							Accusantium Doloremque Laudantium, Totam Rem Aperiam
-						</p>
-					</div>
+					<div className="row">
+						<div className="col-11 col-md-12 mx-auto">
+							<div className="text-center">
+								<h1 className="fw-bold">我们提供什么</h1>
+								<p>
+									Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit Voluptatem
+									Accusantium Doloremque Laudantium, Totam Rem Aperiam
+								</p>
+							</div>
 
-					<div className="row mt-5">
-						{data.map((prev, i) => {
-							return (
-								<div key={i} className="col-3">
-									<div className={(i !== 1 && "_card") || "yellow_card"}>
-										<div className="d-flex justify-content-center">
-											<Image className="w-100" src={prev.i} alt="" />
+							<div className="row gy-5 mt-5 justify-content-center">
+								{data.map((prev, i) => {
+									return (
+										<div key={i} className="col-12 col-sm-6 col-md-4 col-lg-3">
+											<div className={(i !== 1 && "_card") || "yellow_card"}>
+												<div className="d-flex justify-content-center">
+													<Image className="w-100" src={prev.i} alt="" />
+												</div>
+												<div
+													className={`${
+														i === 1 && "text-white"
+													} text_content text-center px-5`}
+												>
+													<h4 className="fw-bold">{prev.t}</h4>
+													<p className="mt-4">{prev.p}</p>
+												</div>
+											</div>
 										</div>
-										<div
-											className={`${
-												i === 1 && "text-white"
-											} text_content text-center px-5`}
-										>
-											<h4 className="fw-bold">{prev.t}</h4>
-											<p className="mt-4">{prev.p}</p>
-										</div>
-									</div>
-								</div>
-							);
-						})}
+									);
+								})}
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
