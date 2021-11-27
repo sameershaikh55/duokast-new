@@ -335,7 +335,7 @@ html {
 }
 
 .hero_container {
-  background: url("../assets/images/hero.svg");
+  background: url("../assets/images/hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -351,8 +351,8 @@ html {
 }
 
 .services_container {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("../assets/images/hero.svg");
-  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../assets/images/hero.svg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("../assets/images/hero.png");
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../assets/images/hero.png");
   width: 100%;
   padding: 8rem 0rem;
 }
@@ -376,7 +376,7 @@ html {
 
 .under_service_container {
   padding: 8rem 0rem;
-  background: url("../assets/images/under_service.svg");
+  background: url("../assets/images/under_service.png");
   width: 100%;
 }
 
@@ -535,7 +535,7 @@ html {
 }
 
 .aboutHero_container {
-  background: url("../assets/images/aboutHero.svg");
+  background: url("../assets/images/aboutHero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
