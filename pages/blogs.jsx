@@ -1,17 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
+
+// CHINESE
 import Layout from "../components/layout";
-import AboutHero from "../components/AboutHero";
-import Footer from "../components/Footer";
-import BlogList from "../components/BlogList";
+import AboutHero from "../components/chinese/AboutHero";
+import Footer from "../components/chinese/Footer";
+import BlogList from "../components/chinese/BlogList";
 
-const blogs = () => {
+// ENGLISH
+import AboutHeroEn from "../components/english/AboutHero";
+import FooterEn from "../components/english/Footer";
+import BlogListEn from "../components/english/BlogList";
+
+import { useStickyState } from "../LangContext";
+
+export default function Blogs() {
+	const [mode, setMode] = useStickyState(false, "mode");
+
 	return (
-		<Layout>
-			<AboutHero blogs />
-			<BlogList />
-			<Footer />
-		</Layout>
+		<>
+			<Layout isEnglish={mode} setIsEnglish={setMode}>
+				{(mode && (
+					<>
+						{/* ENGLISH */}
+						<AboutHeroEn blogs />
+						<BlogListEn />
+						<FooterEn />
+						{/* ENGLISH */}
+					</>
+				)) || (
+					<>
+						{/* CHINESE */}
+						<AboutHero blogs />
+						<BlogList />
+						<Footer />
+						{/* CHINESE */}
+					</>
+				)}
+			</Layout>
+		</>
 	);
-};
-
-export default blogs;
+}

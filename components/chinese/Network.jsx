@@ -1,5 +1,5 @@
 import React from "react";
-import network from "../assets/images/network.svg";
+import network from "../../assets/images/network.svg";
 import Image from "next/image";
 
 const Network = () => {
@@ -9,8 +9,6 @@ const Network = () => {
 				<div className="container-fluid">
 					<div className="row">
 						<div className="col-11 col-md-12 mx-auto">
-							<h1 className="mb-5 text-center">强大的duokast功能</h1>
-
 							<div>
 								<Image className="w-100" src={network} alt="" />
 							</div>

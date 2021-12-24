@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import sliderImg from "../assets/images/slider/i1.svg";
+import sliderImg from "../../assets/images/slider/i1.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -21,11 +21,10 @@ const HomeSlider = () => {
 					<div className="row">
 						<div className="col-11 col-md-12 mx-auto">
 							<div className="text-center">
-								<h1 className="fw-bold">强大的duokast功能</h1>
-								<p>选择您的频道或添加自定义rtmp</p>
+								<h1 className="fw-bold">DUOKAST</h1>
 							</div>
 
-							<div className="row mt-5 pt-5">
+							<div className="row pt-5">
 								<Swiper
 									effect={"coverflow"}
 									grabCursor={true}

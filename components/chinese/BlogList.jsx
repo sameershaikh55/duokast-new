@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import blog from "../assets/images/blog.svg";
+import blog from "../../assets/images/blog.svg";
 import { GoChevronRight } from "react-icons/go";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 

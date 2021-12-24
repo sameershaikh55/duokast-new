@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import blog from "../assets/images/blog.svg";
-import blog2 from "../assets/images/blog2.svg";
+import blog from "../../assets/images/blog.svg";
+import blog2 from "../../assets/images/blog2.svg";
 import { GoChevronRight } from "react-icons/go";
 
 const BlogBody = () => {

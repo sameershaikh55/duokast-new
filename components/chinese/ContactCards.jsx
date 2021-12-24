@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import i1 from "../assets/images/contactIcons/i1.svg";
-import i2 from "../assets/images/contactIcons/i2.svg";
-import i3 from "../assets/images/contactIcons/i3.svg";
+import i1 from "../../assets/images/contactIcons/i1.svg";
+import i2 from "../../assets/images/contactIcons/i2.svg";
+import i3 from "../../assets/images/contactIcons/i3.svg";
 
 const ContactCards = () => {
 	const data = [

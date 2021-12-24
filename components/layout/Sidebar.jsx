@@ -2,7 +2,7 @@ import React from "react";
 import { ImCross } from "react-icons/im";
 import Link from "next/link";
 
-const Sidebar = ({ isOpen, ClickEvent }) => {
+const Sidebar = ({ isOpen, ClickEvent, isEnglish, setIsEnglish }) => {
 	return (
 		<div
 			onClick={ClickEvent}

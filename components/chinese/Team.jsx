@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import i1 from "../assets/images/team/i1.svg";
-import i2 from "../assets/images/team/i2.svg";
-import i3 from "../assets/images/team/i3.svg";
-import i4 from "../assets/images/team/i4.svg";
-import i5 from "../assets/images/team/i5.svg";
-import i6 from "../assets/images/team/i6.svg";
-import i7 from "../assets/images/team/i7.svg";
+import i1 from "../../assets/images/team/i1.svg";
+import i2 from "../../assets/images/team/i2.svg";
+import i3 from "../../assets/images/team/i3.svg";
+import i4 from "../../assets/images/team/i4.svg";
+import i5 from "../../assets/images/team/i5.svg";
+import i6 from "../../assets/images/team/i6.svg";
+import i7 from "../../assets/images/team/i7.svg";
 
 const Team = () => {
 	const data = [

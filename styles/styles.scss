@@ -345,7 +345,7 @@ html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding-top: 10rem;
+	padding: 10rem 0rem 4rem;
 
 	.hero_img {
 		max-width: 900px;
@@ -375,7 +375,7 @@ html {
 
 	.service_card {
 		background-color: #190034;
-		min-height: 290px;
+		min-height: 318px;
 		border-radius: 20px;
 	}
 
@@ -501,12 +501,15 @@ html {
 	}
 
 	.price_card {
+		min-height: 920px;
+
 		button {
 			background-color: $color1;
 		}
 	}
 
 	.price_card2 {
+		min-height: 920px;
 		border-top: 5px solid $color1;
 		border-radius: 6px;
 
@@ -515,8 +518,16 @@ html {
 		}
 	}
 
+	.price_card2.chinese {
+		min-height: 850px;
+	}
+
 	.price_card {
-		min-height: 695px;
+		min-height: 920px;
+	}
+
+	.price_card.chinese {
+		min-height: 850px;
 	}
 
 	.green_bg {

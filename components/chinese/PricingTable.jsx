@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import tick from "../assets/images/tick.svg";
-import tick2 from "../assets/images/tick2.svg";
+import tick from "../../assets/images/tick.svg";
+import tick2 from "../../assets/images/tick2.svg";
 import { FiArrowRightCircle } from "react-icons/fi";
 
 const PricingTable = () => {

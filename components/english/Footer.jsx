@@ -1,9 +1,9 @@
 import React from "react";
-import logow from "../assets/images/logow.svg";
-import i1 from "../assets/images/footerIcons/i1.svg";
-import i2 from "../assets/images/footerIcons/i2.svg";
-import i3 from "../assets/images/footerIcons/i3.svg";
-import i4 from "../assets/images/footerIcons/i4.svg";
+import logow from "../../assets/images/logow.svg";
+import i1 from "../../assets/images/footerIcons/i1.svg";
+import i2 from "../../assets/images/footerIcons/i2.svg";
+import i3 from "../../assets/images/footerIcons/i3.svg";
+import i4 from "../../assets/images/footerIcons/i4.svg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -40,15 +40,15 @@ const Footer = () => {
 					l: "",
 				},
 				{
-					t: "Personal",
+					t: "Basic Streamer",
 					l: "",
 				},
 				{
-					t: "Business",
+					t: "Professional streamer",
 					l: "",
 				},
 				{
-					t: "Premium",
+					t: "Commercial Streamer",
 					l: "",
 				},
 			],
@@ -82,10 +82,7 @@ const Footer = () => {
 									<Image src={logow} alt="" />
 									<div className="row">
 										<p className="under_logo mt-3 col-md-8">
-											Sed ut perspiciatis unde omnis iste natus error sit
-											voluptatem accusantium doloremque laudantium, totam rem
-											aperiam, eaque ipsa quae ab illo inventore veritatis et
-											quasi
+											301 Rongle East Road, Songjiang District, Shanghai
 										</p>
 									</div>
 								</div>
@@ -118,11 +115,10 @@ const Footer = () => {
 								<div className="col-12">
 									<div className="copy_write d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between">
 										<p className="mb-0 text-white">
-											2020 Copyright, All rights Reservecd
+											2020 Copyright, All rights Reserved
 										</p>
-										<div className="mt-2 mt-md-0">
-											<Image src={i1} alt="" /> <Image src={i2} alt="" />{" "}
-											<Image src={i3} alt="" /> <Image src={i4} alt="" />
+										<div className="mt-2 mt-md-0 text-white">
+											[Shanghai ICP No. 2020036420]
 										</div>
 									</div>
 								</div>

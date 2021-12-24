@@ -4,7 +4,7 @@ import logo from "../../assets/images/logo.svg";
 import Image from "next/image";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-const Header = ({ ClickEvent, isOpen }) => {
+const Header = ({ ClickEvent, isOpen, isEnglish, setIsEnglish }) => {
 	useEffect(() => {
 		window.addEventListener("scroll", function () {
 			var header = document.querySelector(".header_container");
@@ -41,7 +41,7 @@ const Header = ({ ClickEvent, isOpen }) => {
 									<Link href="/">Home</Link>
 								</li>
 								<li className="ms-4">
-									<Link href="/family">Family</Link>
+									<Link href="/blogs">Blogs</Link>
 								</li>
 								<li className="mx-4">
 									<Link href="/about">About</Link>
@@ -53,7 +53,9 @@ const Header = ({ ClickEvent, isOpen }) => {
 						</div>
 
 						<div className="buttons_cont d-none d-md-flex">
-							<button>English</button>
+							<button onClick={() => setIsEnglish(!isEnglish)}>
+								{(isEnglish && "Chinese") || "English"}
+							</button>
 							<button className="ms-3">Login</button>
 						</div>
 					</div>

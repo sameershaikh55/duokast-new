@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="254.3" height="254.3" viewBox="0 0 254.3 254.3">
   <defs>
-    <filter id="Ellipse_189" x="0" y="0" width="254.3" height="254.3" filterUnits="userSpaceOnUse">
+    <filter id="Ellipse_188" x="0" y="0" width="254.3" height="254.3" filterUnits="userSpaceOnUse">
       <feOffset dy="12" input="SourceAlpha"/>
       <feGaussianBlur stdDeviation="24" result="blur"/>
       <feFlood flood-color="#929292" flood-opacity="0.161"/>
@@ -8,8 +8,8 @@
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_189)">
-    <circle id="Ellipse_189-2" data-name="Ellipse 189" cx="55.15" cy="55.15" r="55.15" transform="translate(72 60)" fill="#ffb546"/>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_188)">
+    <circle id="Ellipse_188-2" data-name="Ellipse 188" cx="55.15" cy="55.15" r="55.15" transform="translate(72 60)" fill="#fff"/>
   </g>
-  <path id="icons8_live_video_on_1" d="M10.5,9A6.523,6.523,0,0,0,4,15.5v17A6.523,6.523,0,0,0,10.5,39h17A6.523,6.523,0,0,0,34,32.5V31.15l7.729,4.637A1.5,1.5,0,0,0,44,34.5v-21a1.5,1.5,0,0,0-2.271-1.287L34,16.85V15.5A6.523,6.523,0,0,0,27.5,9Zm0,3h17A3.478,3.478,0,0,1,31,15.5v17A3.478,3.478,0,0,1,27.5,36h-17A3.478,3.478,0,0,1,7,32.5v-17A3.478,3.478,0,0,1,10.5,12ZM41,16.15v15.7l-7-4.2v-7.3ZM19,19a5,5,0,1,0,5,5A5.006,5.006,0,0,0,19,19Z" transform="translate(104 91)" fill="#fff"/>
+  <path id="icons8_live_video_on_1" d="M10.5,9A6.523,6.523,0,0,0,4,15.5v17A6.523,6.523,0,0,0,10.5,39h17A6.523,6.523,0,0,0,34,32.5V31.15l7.729,4.637A1.5,1.5,0,0,0,44,34.5v-21a1.5,1.5,0,0,0-2.271-1.287L34,16.85V15.5A6.523,6.523,0,0,0,27.5,9Zm0,3h17A3.478,3.478,0,0,1,31,15.5v17A3.478,3.478,0,0,1,27.5,36h-17A3.478,3.478,0,0,1,7,32.5v-17A3.478,3.478,0,0,1,10.5,12ZM41,16.15v15.7l-7-4.2v-7.3ZM19,19a5,5,0,1,0,5,5A5.006,5.006,0,0,0,19,19Z" transform="translate(104 91)" fill="#ffa62b"/>
 </svg>
