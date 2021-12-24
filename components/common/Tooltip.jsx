@@ -3,13 +3,9 @@ import { FaQuestionCircle } from "react-icons/fa";
 
 const Tooltip = ({ title }) => {
 	return (
-		<div className="tooltip">
+		<div className="tooltip_custom">
 			<FaQuestionCircle color="#00000096" />
-			<span className="tooltiptext">
-				<FaQuestionCircle color="#00000096" />
-
-				{title}
-			</span>
+			<span className="tooltiptext">{title}</span>
 		</div>
 	);
 };

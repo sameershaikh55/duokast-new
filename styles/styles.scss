@@ -638,6 +638,49 @@ html {
 }
 // ABOUT US END
 
+// TOOLTIP START
+.tooltip_custom {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip_custom .tooltiptext {
+	visibility: hidden;
+	width: 140px;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 10px;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: -12%;
+	margin-left: -60px;
+	font-size: 13px;
+
+	/* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.tooltip_custom .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
+}
+
+.tooltip_custom:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+// TOOLTIP END
+
 // ABOUT US SECTIONS START
 .aboutSec_container {
 	margin-top: 6rem;

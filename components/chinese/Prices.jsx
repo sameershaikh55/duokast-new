@@ -1,4 +1,5 @@
 import React from "react";
+import Tooltip from "../common/Tooltip";
 
 const Prices = () => {
 	const pricing = {
@@ -173,7 +174,10 @@ const Prices = () => {
 														<div className="col-2">
 															<img src="/images/greenTick.svg" alt="" />
 														</div>
-														<div className="col-10 ps-0">{item.t}</div>
+														<div className="col-10 ps-0">
+															{item.t}{" "}
+															{item.m !== null && <Tooltip title={item.m} />}
+														</div>
 													</li>
 												);
 											})}
@@ -197,7 +201,10 @@ const Prices = () => {
 														<div className="col-2">
 															<img src="/images/greenTick.svg" alt="" />
 														</div>
-														<div className="col-10 ps-0">{item.t}</div>
+														<div className="col-10 ps-0">
+															{item.t}{" "}
+															{item.m !== null && <Tooltip title={item.m} />}
+														</div>
 													</li>
 												);
 											})}
@@ -221,7 +228,10 @@ const Prices = () => {
 														<div className="col-2">
 															<img src="/images/greenTick.svg" alt="" />
 														</div>
-														<div className="col-10 ps-0">{item.t}</div>
+														<div className="col-10 ps-0">
+															{item.t}{" "}
+															{item.m !== null && <Tooltip title={item.m} />}
+														</div>
 													</li>
 												);
 											})}
