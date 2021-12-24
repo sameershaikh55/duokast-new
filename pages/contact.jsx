@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import Layout from "../components/layout";
 
@@ -6,13 +6,13 @@ import Layout from "../components/layout";
 import AboutHero from "../components/chinese/AboutHero";
 import Footer from "../components/chinese/Footer";
 import ContactForm from "../components/chinese/ContactForm";
-import ContactCards from "../components/chinese/ContactCards";
+// import ContactCards from "../components/chinese/ContactCards";
 
 // ENGLISH
 import AboutHeroEn from "../components/english/AboutHero";
 import FooterEn from "../components/english/Footer";
 import ContactFormEn from "../components/english/ContactForm";
-import ContactCardsEn from "../components/english/ContactCards";
+// import ContactCardsEn from "../components/english/ContactCards";
 
 import { useStickyState } from "../LangContext";
 

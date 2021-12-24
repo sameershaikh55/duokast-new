@@ -8,7 +8,6 @@ import i5 from "../../assets/images/services/i5.svg";
 import i6 from "../../assets/images/services/i6.svg";
 import i7 from "../../assets/images/services/i7.svg";
 import i8 from "../../assets/images/services/i8.svg";
-import i9 from "../../assets/images/services/i9.svg";
 
 const Services = () => {
 	const services = [

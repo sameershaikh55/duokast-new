@@ -73,7 +73,7 @@ const BlogBody = () => {
 											galvanized the mock jury box. Quick brown dogs jump over
 											the lazy fox. The jay, pig, fox, zebra, and my wolves
 											quack! Blowzy red vixens fight for a quick jump. Joaquin
-											Phoenix was gazed by MTV for luck. A wizard’s job is to
+											Phoenix was gazed by MTV for luck. A wizards job is to
 											vex chumps quickly in fog. Watch Jeopardy!, Alex Trebeks
 											fun TV quiz game. The quick, brown fox jumps over a lazy
 											dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz

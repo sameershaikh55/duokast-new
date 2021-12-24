@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 // CHINESE
 import Faq from "../components/chinese/Faq";

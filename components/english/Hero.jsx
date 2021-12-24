@@ -1,7 +1,7 @@
 import React from "react";
 import heroImg from "../../assets/images/heroImg.svg";
 import Image from "next/image";
-import Brand from "./Brand";
+// import Brand from "./Brand";
 
 const Hero = () => {
 	return (

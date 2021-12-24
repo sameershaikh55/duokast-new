@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import Footer from "../components/chinese/Footer";
 import BlogBody from "../components/chinese/BlogBody";
 
-const blog = () => {
+const Blog = () => {
 	return (
 		<Layout>
 			<BlogBody />
@@ -12,4 +12,4 @@ const blog = () => {
 	);
 };
 
-export default blog;
+export default Blog;

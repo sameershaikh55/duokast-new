@@ -4,7 +4,7 @@ import { BsFacebook } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 import loginImg from "../assets/images/login.PNG";
 
-const signUp = () => {
+const SignUp = () => {
 	return (
 		<div className="sign_up_container">
 			<div className="container-fluid">
@@ -82,4 +82,4 @@ const signUp = () => {
 	);
 };
 
-export default signUp;
+export default SignUp;

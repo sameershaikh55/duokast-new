@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import unService from "../../assets/images/unService.svg";
+// import Image from "next/image";
+// import unService from "../../assets/images/unService.svg";
 
 const UnderService = ({ about }) => {
 	return (

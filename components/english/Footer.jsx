@@ -1,9 +1,5 @@
 import React from "react";
 import logow from "../../assets/images/logow.svg";
-import i1 from "../../assets/images/footerIcons/i1.svg";
-import i2 from "../../assets/images/footerIcons/i2.svg";
-import i3 from "../../assets/images/footerIcons/i3.svg";
-import i4 from "../../assets/images/footerIcons/i4.svg";
 import Image from "next/image";
 import Link from "next/link";
 
