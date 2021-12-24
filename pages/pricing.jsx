@@ -29,7 +29,7 @@ export default function Pricing() {
 
 	return (
 		<>
-			<Layout isEnglish={isEnglish} setIsEnglish={setMode}>
+			<Layout isEnglish={mode} setIsEnglish={setMode}>
 				{(mode && (
 					<>
 						{/* ENGLISH */}
