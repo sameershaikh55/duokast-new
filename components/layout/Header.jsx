@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
-import logo from "../../assets/images/logo.svg";
-import Image from "next/image";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = ({ ClickEvent, isOpen, isEnglish, setIsEnglish }) => {
@@ -23,7 +22,7 @@ const Header = ({ ClickEvent, isOpen, isEnglish, setIsEnglish }) => {
 						{/* LOGO START */}
 						<Link href="/">
 							<div className="pointer logo_container mt-1">
-								<Image src={logo} alt="" />
+								<img src="/images/logo.svg" alt="" />
 							</div>
 						</Link>
 

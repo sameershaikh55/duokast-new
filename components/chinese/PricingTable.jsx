@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import tick from "../../assets/images/tick.svg";
-import tick2 from "../../assets/images/tick2.svg";
+
 import { FiArrowRightCircle } from "react-icons/fi";
 
 const PricingTable = () => {
@@ -137,15 +135,15 @@ const PricingTable = () => {
 															<tr key={i}>
 																<td className="border-bottom py-2">{prev.t}</td>
 																<td className="border-bottom py-2 text-center">
-																	{(prev.t1 && <Image src={tick} alt="" />) ||
+																	{(prev.t1 && <img src="/images/tick.svg" alt="" />) ||
 																		""}
 																</td>
 																<td className="border-bottom py-2 text-center bg_color5 text-white">
-																	{(prev.t2 && <Image src={tick2} alt="" />) ||
+																	{(prev.t2 && <img src="/images/tick2.svg" alt="" />) ||
 																		""}
 																</td>
 																<td className="border-bottom py-2 text-center">
-																	{(prev.t3 && <Image src={tick} alt="" />) ||
+																	{(prev.t3 && <img src="/images/tick.svg" alt="" />) ||
 																		""}
 																</td>
 															</tr>

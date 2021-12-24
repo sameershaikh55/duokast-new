@@ -1,6 +1,5 @@
 import React from "react";
-import logow from "../../assets/images/logow.svg";
-import Image from "next/image";
+
 import Link from "next/link";
 
 const Footer = () => {
@@ -75,7 +74,7 @@ const Footer = () => {
 						<div className="col-11 col-md-12 mx-auto">
 							<div className="row gy-5">
 								<div className="col-12 col-md-6">
-									<Image src={logow} alt="" />
+									<img src="/images/logow.svg" alt="" />
 									<div className="row">
 										<p className="under_logo mt-3 col-md-8">
 											301 Rongle East Road, Songjiang District, Shanghai

@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import blog from "../../assets/images/blog.svg";
-import blog2 from "../../assets/images/blog2.svg";
+
 import { GoChevronRight } from "react-icons/go";
 
 const BlogBody = () => {
@@ -29,7 +27,7 @@ const BlogBody = () => {
 										By Martin King • 20 Jun 2020 • 5 min read
 									</p>
 									<div className="my-4">
-										<Image src={blog2} alt="" />
+										<img src="/images/blog2.svg" alt="" className="w-100" />
 									</div>
 
 									<div>
@@ -73,15 +71,15 @@ const BlogBody = () => {
 											galvanized the mock jury box. Quick brown dogs jump over
 											the lazy fox. The jay, pig, fox, zebra, and my wolves
 											quack! Blowzy red vixens fight for a quick jump. Joaquin
-											Phoenix was gazed by MTV for luck. A wizards job is to
-											vex chumps quickly in fog. Watch Jeopardy!, Alex Trebeks
-											fun TV quiz game. The quick, brown fox jumps over a lazy
-											dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz
-											graced by fox whelps. Bawds jog, flick quartz, vex nymphs.
-											Waltz, bad nymph, for quick jigs vex! Fox nymphs grab
-											quick-jived waltz. Brick quiz whangs jumpy veldt fox.
-											Bright vixens jump; dozy fowl quack. Quick wafting zephyrs
-											vex bold Jim. Quick zephyrs blow
+											Phoenix was gazed by MTV for luck. A wizards job is to vex
+											chumps quickly in fog. Watch Jeopardy!, Alex Trebeks fun
+											TV quiz game. The quick, brown fox jumps over a lazy dog.
+											DJs flock by when MTV ax quiz prog. Junk MTV quiz graced
+											by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz,
+											bad nymph, for quick jigs vex! Fox nymphs grab quick-jived
+											waltz. Brick quiz whangs jumpy veldt fox. Bright vixens
+											jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim.
+											Quick zephyrs blow
 										</p>
 
 										<h4 className="fw-bold mb-2 mt-4">
@@ -135,7 +133,11 @@ const BlogBody = () => {
 															key={i}
 														>
 															<div className="blog_card shadow">
-																<Image className="w-100" src={blog} alt="" />
+																<img
+																	className="w-100"
+																	src="/images/blog.svg"
+																	alt=""
+																/>
 																<div className="px-3 pb-3">
 																	<h4 className="mt-2">Lorem ipsum</h4>
 																	<p className="mb-2">
@@ -170,7 +172,11 @@ const BlogBody = () => {
 												>
 													<div className="row">
 														<div className="col-4">
-															<Image className="w-100" src={blog} alt="" />
+															<img
+																className="w-100"
+																src="/images/blog.svg"
+																alt=""
+															/>
 														</div>
 														<div className="col-8">
 															<h6 className="mb-1 fw-bold">

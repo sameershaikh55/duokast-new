@@ -1,6 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import sliderImg from "../../assets/images/slider/i1.svg";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -50,22 +49,22 @@ const HomeSlider = () => {
 									className="mySwiper"
 								>
 									<SwiperSlide>
-										<Image src={sliderImg} alt="" />
+										<img src="/images/slider/i1.svg" alt="" className="w-100" />
 									</SwiperSlide>
 									<SwiperSlide>
-										<Image src={sliderImg} alt="" />
+										<img src="/images/slider/i1.svg" alt="" className="w-100" />
 									</SwiperSlide>
 									<SwiperSlide>
-										<Image src={sliderImg} alt="" />
+										<img src="/images/slider/i1.svg" alt="" className="w-100" />
 									</SwiperSlide>
 									<SwiperSlide>
-										<Image src={sliderImg} alt="" />
+										<img src="/images/slider/i1.svg" alt="" className="w-100" />
 									</SwiperSlide>
 									<SwiperSlide>
-										<Image src={sliderImg} alt="" />
+										<img src="/images/slider/i1.svg" alt="" className="w-100" />
 									</SwiperSlide>
 									<SwiperSlide>
-										<Image src={sliderImg} alt="" />
+										<img src="/images/slider/i1.svg" alt="" className="w-100" />
 									</SwiperSlide>
 								</Swiper>
 							</div>

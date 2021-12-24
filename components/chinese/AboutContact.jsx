@@ -1,6 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import contact from "../../assets/images/contact.svg";
+
 
 const AboutContact = () => {
 	return (
@@ -22,7 +21,7 @@ const AboutContact = () => {
 								<div className="col-12 col-md-6 align-self-end">
 									<div className="row">
 										<div className="col-12 col-md-8 mx-auto">
-											<Image className="w-100" src={contact} alt="" />
+											<img className="w-100" src="/images/contact.svg" alt="" />
 										</div>
 									</div>
 								</div>

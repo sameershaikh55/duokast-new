@@ -341,7 +341,7 @@ html {
 
 // HERO START
 .hero_container {
-	background: url("../assets/images/hero.png");
+	background: url("/images/hero.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -365,7 +365,7 @@ html {
 			rgba(255, 255, 255, 0.7),
 			rgba(255, 255, 255, 0.7)
 		),
-		url("../assets/images/hero.png");
+		url("/images/hero.png");
 	width: 100%;
 	padding: 8rem 0rem;
 
@@ -389,7 +389,7 @@ html {
 // UNDER SERVOCES START
 .under_service_container {
 	padding: 8rem 0rem;
-	background: url("../assets/images/under_service.png");
+	background: url("/images/under_service.png");
 	width: 100%;
 }
 // UNDER SERVOCES END
@@ -576,7 +576,7 @@ html {
 
 // ABOUT US START
 .aboutHero_container {
-	background: url("../assets/images/aboutHero.png");
+	background: url("/images/aboutHero.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -744,7 +744,7 @@ html {
 
 	img {
 		object-fit: cover;
-		height: 100vh;
+		height: 100%;
 	}
 
 	.inner_sign {

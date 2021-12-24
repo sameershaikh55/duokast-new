@@ -1,7 +1,6 @@
 import React from "react";
-import heroImg from "../../assets/images/heroImg.svg";
-import Image from "next/image";
-import Brand from "./Brand";
+
+// import Brand from "./Brand";
 
 const Hero = () => {
 	return (
@@ -22,7 +21,7 @@ const Hero = () => {
 								</button>
 							</div>
 							<div className="hero_img mx-auto mt-4">
-								<Image src={heroImg} alt="插图" />
+								<img src="/images/heroImg.svg" alt="插图" className="w-100" />
 							</div>
 
 							{/* BRANDS */}

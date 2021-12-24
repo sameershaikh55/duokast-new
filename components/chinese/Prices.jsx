@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import greenTick from "../../assets/images/greenTick.svg";
-import arrow from "../../assets/images/arrow.svg";
+
 
 const Prices = () => {
 	return (
@@ -39,7 +37,7 @@ const Prices = () => {
 										<p>基本串流</p>
 										<h3 className="mb-3">¥90/ 月</h3>
 										<button className="d-flex justify-content-between align-items-center border-0 py-1 text-white rounded-3 px-3 fw-bold w-50">
-											开始 <Image src={arrow} alt="" />
+											开始 <img src="/images/arrow.svg" alt="" />
 										</button>
 
 										<hr className="my-5" />
@@ -47,7 +45,7 @@ const Prices = () => {
 										<ul className="list-unstyled">
 											<li className="row">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													多流媒体 (在20个以上的平台进行直播)
@@ -55,7 +53,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													2个自定义RTMP目的地 (添加2个自定义rtmp链接)
@@ -63,7 +61,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													邀请5位嘉宾 (在串流上邀请3位嘉宾)
@@ -71,7 +69,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													移除背景 (移除您不喜欢的背景)
@@ -79,7 +77,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													视觉效果 (动态图片、图片col-10)
@@ -87,7 +85,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													预录视频 (上传预先录制的视频)
@@ -95,13 +93,13 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">屏幕共享col-10 </div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													720p 分辨率 (720p的串流col-10)
@@ -109,7 +107,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													1名团队成员 (添加1名团队成员)
@@ -117,7 +115,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													3GB媒体存储空间 col-10
@@ -125,7 +123,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													兼容Zoom、OBS和其他编码器col-10
@@ -139,7 +137,7 @@ const Prices = () => {
 										<p>专业串流 </p>
 										<h3 className="mb-3">¥220/月</h3>
 										<button className="d-flex justify-content-between align-items-center border-0 py-1 text-white rounded-3 px-3 fw-bold w-50">
-											开始 <Image src={arrow} alt="" />
+											开始 <img src="/images/arrow.svg" alt="" />
 										</button>
 
 										<hr className="my-5" />
@@ -147,7 +145,7 @@ const Prices = () => {
 										<ul className="list-unstyled">
 											<li className="row">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													基本串流的功能再升级col-10
@@ -155,13 +153,13 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">多流媒体col-10 </div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													5个自定义rtmp (添加5个自定义rtmp链接)
@@ -169,7 +167,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													邀请10位嘉宾 (10位成员同时在屏幕上)
@@ -177,7 +175,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													1080p全高清画质(1080p全高清画质串流)
@@ -185,19 +183,19 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">云GPUcol-10 </div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">特别支持col-10 </div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													故障安全
@@ -206,7 +204,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													15GB媒体存储空间col-10
@@ -214,7 +212,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													4名团队成员 (可添加4个座位)
@@ -228,7 +226,7 @@ const Prices = () => {
 										<p>商业串流</p>
 										<h3 className="mb-3">¥980/月</h3>
 										<button className="d-flex justify-content-between align-items-center border-0 py-1 text-white rounded-3 px-3 fw-bold w-50">
-											开始 <Image src={arrow} alt="" />
+											开始 <img src="/images/arrow.svg" alt="" />
 										</button>
 
 										<hr className="my-5" />
@@ -236,7 +234,7 @@ const Prices = () => {
 										<ul className="list-unstyled">
 											<li className="row">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													专业串流的功能再升级col-10
@@ -244,13 +242,13 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">10个自定义RTMPcol-10 </div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													可邀请15位嘉宾加入屏幕col-10
@@ -258,13 +256,13 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">专属支持col-10 </div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													云GPU (我们将添加自定义GPU至您的账户)
@@ -272,13 +270,13 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">云录制col-10 </div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													60GB媒体存储空间col-10
@@ -286,7 +284,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													6名团队成员 (可添加6个座位)

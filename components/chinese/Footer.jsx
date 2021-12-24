@@ -1,10 +1,5 @@
 import React from "react";
-import logow from "../../assets/images/logow.svg";
-import i1 from "../../assets/images/footerIcons/i1.svg";
-import i2 from "../../assets/images/footerIcons/i2.svg";
-import i3 from "../../assets/images/footerIcons/i3.svg";
-import i4 from "../../assets/images/footerIcons/i4.svg";
-import Image from "next/image";
+
 import Link from "next/link";
 
 const Footer = () => {
@@ -79,7 +74,7 @@ const Footer = () => {
 						<div className="col-11 col-md-12 mx-auto">
 							<div className="row gy-5">
 								<div className="col-12 col-md-6">
-									<Image src={logow} alt="" />
+									<img src="/images/logow.svg" alt="" />
 									<div className="row">
 										<p className="under_logo mt-3 col-md-8">
 											上海市松江区荣乐东路 301 号

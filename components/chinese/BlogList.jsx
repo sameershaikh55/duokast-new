@@ -1,6 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import blog from "../../assets/images/blog.svg";
+
 import { GoChevronRight } from "react-icons/go";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 
@@ -29,7 +28,7 @@ const BlogList = () => {
 													key={i}
 												>
 													<div className="blog_card shadow">
-														<Image className="w-100" src={blog} alt="" />
+														<img className="w-100" src="/images/blog.svg" alt="" />
 														<div className="px-3 pb-3">
 															<h4 className="mt-2">Lorem ipsum dolor sit</h4>
 															<p className="mb-2">
@@ -62,7 +61,7 @@ const BlogList = () => {
 												>
 													<div className="row">
 														<div className="col-4">
-															<Image className="w-100" src={blog} alt="" />
+															<img className="w-100" src="/images/blog.svg" alt="" />
 														</div>
 														<div className="col-8">
 															<h6 className="mb-1 fw-bold">

@@ -1,8 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import i1 from "../../assets/images/aboutSec/i1.svg";
-import i2 from "../../assets/images/aboutSec/i2.svg";
-import i3 from "../../assets/images/aboutSec/i3.svg";
+
 
 const AboutSec = () => {
 	return (
@@ -30,12 +27,12 @@ const AboutSec = () => {
 										<div className="col-md-5 mt-4 mt-md-0">
 											<div className="row">
 												<div className="col-6 col-md-12">
-													<Image src={i1} alt="" />
+													<img src="/images/aboutSec/i1.svg" alt="" />
 												</div>
 												<div className="col-6 col-md-12">
 													<div className="row mt-4">
 														<div className="ms-auto col-md-10">
-															<Image src={i2} alt="" />
+															<img src="/images/aboutSec/i2.svg" alt="" />
 														</div>
 													</div>
 												</div>
@@ -55,7 +52,7 @@ const AboutSec = () => {
 											</div>
 
 											<div className="mt-4 mt-md-5">
-												<Image src={i3} alt="" />
+												<img src="/images/aboutSec/i3.svg" alt="" />
 											</div>
 										</div>
 									</div>

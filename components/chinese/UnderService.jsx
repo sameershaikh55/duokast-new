@@ -1,6 +1,6 @@
 import React from "react";
-// import Image from "next/image";
-// import unService from "../../assets/images/unService.svg";
+// 
+// import unService from "/images/unService.svg";
 
 const UnderService = ({ about }) => {
 	return (
@@ -29,7 +29,7 @@ const UnderService = ({ about }) => {
 								</div>
 
 								{/* <div className="col-12 mt-5">
-									<Image src={unService} alt="" />
+									<img src={unService} alt="" />
 								</div> */}
 							</div>
 						</div>

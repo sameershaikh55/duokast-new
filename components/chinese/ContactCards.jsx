@@ -1,13 +1,10 @@
 import React from "react";
-import Image from "next/image";
-import i1 from "../../assets/images/contactIcons/i1.svg";
-import i2 from "../../assets/images/contactIcons/i2.svg";
-import i3 from "../../assets/images/contactIcons/i3.svg";
+
 
 const ContactCards = () => {
 	const data = [
 		{
-			i: i1,
+			i: "/images/contactIcons/i1.svg",
 			t: "Help & support",
 			p: (
 				<p className="f20">
@@ -25,7 +22,7 @@ const ContactCards = () => {
 			),
 		},
 		{
-			i: i2,
+			i: "/images/contactIcons/i2.svg",
 			t: "Call us",
 			p: (
 				<p className="f20">
@@ -41,7 +38,7 @@ const ContactCards = () => {
 			),
 		},
 		{
-			i: i3,
+			i: "/images/contactIcons/i3.svg",
 			t: "Fax",
 			p: (
 				<p className="f20">
@@ -71,7 +68,7 @@ const ContactCards = () => {
 											key={i}
 											className="col-12 col-sm-6 col-md-4 card_contact"
 										>
-											<Image src={prev.i} alt="" />
+											<img src={prev.i} alt="" />
 											<h5 className="fw-bold mt-4 mb-3">{prev.t}</h5>
 											{prev.p}
 										</div>

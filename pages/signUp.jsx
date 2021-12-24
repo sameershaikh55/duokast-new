@@ -1,8 +1,7 @@
 import React from "react";
-import Image from "next/image";
-import { BsFacebook } from "react-icons/bs";
-import { FcGoogle } from "react-icons/fc";
-import loginImg from "../assets/images/login.PNG";
+
+// import { BsFacebook } from "react-icons/bs";
+// import { FcGoogle } from "react-icons/fc";
 
 const SignUp = () => {
 	return (
@@ -15,7 +14,7 @@ const SignUp = () => {
 								<div className="col-12 py-4 col-md-8 align-self-center px-5 form_sec">
 									<h1 className="fw-bold mb-4 mb-md-3">Sign up</h1>
 
-									<div className="d-flex flex-column flex-md-row mb-4">
+									{/* <div className="d-flex flex-column flex-md-row mb-4">
 										<div className="share_ px-4 d-flex align-items-center">
 											<BsFacebook color="#1877F2" fontSize="1.2rem" />
 											<p className="mb-0 ms-3">Signup with Facebook</p>
@@ -24,7 +23,7 @@ const SignUp = () => {
 											<FcGoogle fontSize="1.2rem" />
 											<p className="mb-0 ms-3">Signup with Google</p>
 										</div>
-									</div>
+									</div> */}
 
 									<div className="row">
 										<div className="col-12">
@@ -71,7 +70,7 @@ const SignUp = () => {
 									</div>
 								</div>
 								<div className="bg_color2 d-none d-md-block col-4 h-100">
-									<Image className="w-100 h-100" src={loginImg} alt="" />
+									<img className="w-100 h-100" src="/images/login.PNG" alt="" />
 								</div>
 							</div>
 						</div>

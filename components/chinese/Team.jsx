@@ -1,52 +1,45 @@
 import React from "react";
-import Image from "next/image";
-import i1 from "../../assets/images/team/i1.svg";
-import i2 from "../../assets/images/team/i2.svg";
-import i3 from "../../assets/images/team/i3.svg";
-import i4 from "../../assets/images/team/i4.svg";
-import i5 from "../../assets/images/team/i5.svg";
-import i6 from "../../assets/images/team/i6.svg";
-import i7 from "../../assets/images/team/i7.svg";
+
 
 const Team = () => {
 	const data = [
 		{
-			i: i1,
+			i: "/images/team/i1.svg",
 			t: "David Martin",
 			p: "Founder & CTO",
 		},
 		{
-			i: i2,
+			i: "/images/team/i2.svg",
 			t: "Mark Henricks",
 			p: "Creative Director",
 		},
 		{
-			i: i3,
+			i: "/images/team/i3.svg",
 			t: "David Martin",
 			p: "Design Head",
 		},
 		{
-			i: i4,
+			i: "/images/team/i4.svg",
 			t: "David Martin",
 			p: "Software Engineer",
 		},
 		{
-			i: i5,
+			i: "/images/team/i5.svg",
 			t: "David Martin",
 			p: "Founder & CTO",
 		},
 		{
-			i: i6,
+			i: "/images/team/i6.svg",
 			t: "Mark Henricks",
 			p: "Creative Director",
 		},
 		{
-			i: i7,
+			i: "/images/team/i7.svg",
 			t: "David Martin",
 			p: "Design Head",
 		},
 		{
-			i: i7,
+			i: "/images/team/i7.svg",
 			t: "David Martin",
 			p: "Design Head",
 		},
@@ -86,7 +79,7 @@ const Team = () => {
 												</div>
 											)) || (
 												<>
-													<Image className="w-100" src={prev.i} alt="" />
+													<img className="w-100" src={prev.i} alt="" />
 													<h5 className="fw600 mt-2 mb-0">{prev.t}</h5>
 													<p className="color4">{prev.p}</p>
 												</>

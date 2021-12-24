@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
-import greenTick from "../../assets/images/greenTick.svg";
-import arrow from "../../assets/images/arrow.svg";
+
 
 const Prices = () => {
 	return (
@@ -39,7 +37,7 @@ const Prices = () => {
 										<p>Basic Streamer</p>
 										<h3 className="mb-3">Y90/ MONTH</h3>
 										<button className="d-flex justify-content-between align-items-center border-0 py-1 text-white rounded-3 px-3 fw-bold w-50">
-											Get Started <Image src={arrow} alt="" />
+											Get Started <img src="/images/arrow.svg" alt="" />
 										</button>
 
 										<hr className="my-5" />
@@ -47,7 +45,7 @@ const Prices = () => {
 										<ul className="list-unstyled">
 											<li className="row">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													Multi-stream ( live-stream to 20+ platforms)
@@ -55,7 +53,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													2 custom RTMP destinations ( Add 2 custom rtmp urls)
@@ -63,7 +61,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													invite 5 guests ( invite 3 guests on stream)
@@ -71,7 +69,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													background removal ( remove background)
@@ -79,7 +77,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													visuals ( gifs,images{" "}
@@ -87,7 +85,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													pre-recorded video ( upload a pre-recorded video)
@@ -95,13 +93,13 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">screen sharing</div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													720p resolution ( stream in 720p)
@@ -109,7 +107,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													1 team member ( add 1 team member)
@@ -117,13 +115,13 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">3 GB media storage</div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													Compatible with zoom, OBS and other encoders
@@ -137,7 +135,7 @@ const Prices = () => {
 										<p>Professional streamer</p>
 										<h3 className="mb-3">Y220/MONTH</h3>
 										<button className="d-flex justify-content-between align-items-center border-0 py-1 text-white rounded-3 px-3 fw-bold w-50">
-											Get Started <Image src={arrow} alt="" />
+											Get Started <img src="/images/arrow.svg" alt="" />
 										</button>
 
 										<hr className="my-5" />
@@ -145,19 +143,19 @@ const Prices = () => {
 										<ul className="list-unstyled">
 											<li className="row">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">Everything in basic </div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">Multistream</div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													5 custom rtmp( add 5 custom rtmp urls)
@@ -165,7 +163,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													Invite 10 guests ( 10 guests on screen)
@@ -173,7 +171,7 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													1080p full HD ( stream in 1080p full HD)
@@ -181,19 +179,19 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">Cloud GPU</div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">Specialized support</div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													Fail safe ( anything can go wrong during a live-stream
@@ -203,13 +201,13 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">15 GB media storage</div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													4 team members ( 4 seats can be added)
@@ -223,7 +221,7 @@ const Prices = () => {
 										<p>Commercial Streamer</p>
 										<h3 className="mb-3">Y980/MONTH</h3>
 										<button className="d-flex justify-content-between align-items-center border-0 py-1 text-white rounded-3 px-3 fw-bold w-50">
-											Get Started <Image src={arrow} alt="" />
+											Get Started <img src="/images/arrow.svg" alt="" />
 										</button>
 
 										<hr className="my-5" />
@@ -231,7 +229,7 @@ const Prices = () => {
 										<ul className="list-unstyled">
 											<li className="row">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													Everything in Professional +
@@ -239,13 +237,13 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">10 Custom RTMP</div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													Invite 15 guest on screen
@@ -253,13 +251,13 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">Dedicated support</div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													Cloud GPU( we will add a custom GPU to your account)
@@ -267,19 +265,19 @@ const Prices = () => {
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">Cloud recording</div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">60 GB media storage</div>
 											</li>
 											<li className="row mt-3">
 												<div className="col-2 mt-1">
-													<Image src={greenTick} alt="" />
+													<img src="/images/greenTick.svg" alt="" />
 												</div>
 												<div className="col-10 ps-0">
 													6 team members ( 6 seats can be added)
