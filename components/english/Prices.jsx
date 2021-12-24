@@ -1,7 +1,132 @@
 import React from "react";
-
+import Tooltip from "../common/Tooltip";
 
 const Prices = () => {
+	const pricing = {
+		basic: [
+			{
+				t: "Multi-stream",
+				m: "(live-stream to 20+ platforms)",
+			},
+			{
+				t: "2 custom RTMP destinations",
+				m: "(Add 2 custom rtmp urls)",
+			},
+			{
+				t: "invite 5 guests",
+				m: "(invite 3 guests on stream)",
+			},
+			{
+				t: "background removal",
+				m: "(remove background)",
+			},
+			{
+				t: "visuals",
+				m: "(gifs,images)",
+			},
+			{
+				t: "pre-recorded video",
+				m: "(upload a pre-recorded video)",
+			},
+			{
+				t: "screen sharing",
+				m: null,
+			},
+			{
+				t: "720p resolution",
+				m: "(stream in 720p)",
+			},
+			{
+				t: "1 team member",
+				m: "(add 1 team member)",
+			},
+			{
+				t: "3 GB media storage",
+				m: null,
+			},
+			{
+				t: "Compatible with zoom, OBS and other encoders",
+				m: null,
+			},
+		],
+		professional: [
+			{
+				t: "Everything in basic",
+				m: null,
+			},
+			{
+				t: "Multistream",
+				m: null,
+			},
+			{
+				t: "5 custom rtmp",
+				m: "(add 5 custom rtmp urls)",
+			},
+			{
+				t: "Invite 10 guests",
+				m: "(10 guests on screen)",
+			},
+			{
+				t: "1080p full HD",
+				m: "(stream in 1080p full HD)",
+			},
+			{
+				t: "Cloud GPU",
+				m: null,
+			},
+			{
+				t: "Specialized support",
+				m: null,
+			},
+			{
+				t: "Fail safe",
+				m: "(anything can go wrong during a live-stream if the browser shuts down we will keep the live-stream active for 1 minute)",
+			},
+			{
+				t: "15 GB media storage",
+				m: null,
+			},
+			{
+				t: "4 team members",
+				m: "(4 seats can be added)",
+			},
+		],
+		commercial: [
+			{
+				t: "Everything in Professional +",
+				m: null,
+			},
+			{
+				t: "10 Custom RTMP",
+				m: null,
+			},
+			{
+				t: "Invite 15 guest on screen",
+				m: null,
+			},
+			{
+				t: "Dedicated support",
+				m: null,
+			},
+			{
+				t: "Cloud GPU",
+				m: "(we will add a custom GPU to your account)",
+			},
+			{
+				t: "Cloud recording",
+				m: null,
+			},
+			{
+				t: "60 GB media storage",
+				m: null,
+			},
+			{
+				t: "6 team members",
+				m: "(6 seats can be added)",
+			},
+		],
+	};
+
 	return (
 		<div className="prices_container">
 			<div className="page_container">
@@ -43,90 +168,16 @@ const Prices = () => {
 										<hr className="my-5" />
 
 										<ul className="list-unstyled">
-											<li className="row">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													Multi-stream ( live-stream to 20+ platforms)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													2 custom RTMP destinations ( Add 2 custom rtmp urls)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													invite 5 guests ( invite 3 guests on stream)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													background removal ( remove background)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													visuals ( gifs,images{" "}
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													pre-recorded video ( upload a pre-recorded video)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">screen sharing</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													720p resolution ( stream in 720p)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													1 team member ( add 1 team member)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">3 GB media storage</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													Compatible with zoom, OBS and other encoders
-												</div>
-											</li>
+											{pricing.basic.map((item, i) => {
+												return (
+													<li key={i} className="row mt-3">
+														<div className="col-2">
+															<img src="/images/greenTick.svg" alt="" />
+														</div>
+														<div className="col-10 ps-0">{item.t}</div>
+													</li>
+												);
+											})}
 										</ul>
 									</div>
 								</div>
@@ -141,78 +192,16 @@ const Prices = () => {
 										<hr className="my-5" />
 
 										<ul className="list-unstyled">
-											<li className="row">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">Everything in basic </div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">Multistream</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													5 custom rtmp( add 5 custom rtmp urls)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													Invite 10 guests ( 10 guests on screen)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													1080p full HD ( stream in 1080p full HD)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">Cloud GPU</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">Specialized support</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													Fail safe ( anything can go wrong during a live-stream
-													if the browser shuts down we will keep the live-stream
-													active for 1 minute )
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">15 GB media storage</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													4 team members ( 4 seats can be added)
-												</div>
-											</li>
+											{pricing.commercial.map((item, i) => {
+												return (
+													<li key={i} className="row mt-3">
+														<div className="col-2">
+															<img src="/images/greenTick.svg" alt="" />
+														</div>
+														<div className="col-10 ps-0">{item.t}</div>
+													</li>
+												);
+											})}
 										</ul>
 									</div>
 								</div>
@@ -227,62 +216,16 @@ const Prices = () => {
 										<hr className="my-5" />
 
 										<ul className="list-unstyled">
-											<li className="row">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													Everything in Professional +
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">10 Custom RTMP</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													Invite 15 guest on screen
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">Dedicated support</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													Cloud GPU( we will add a custom GPU to your account)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">Cloud recording</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">60 GB media storage</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2 mt-1">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													6 team members ( 6 seats can be added)
-												</div>
-											</li>
+											{pricing.professional.map((item, i) => {
+												return (
+													<li key={i} className="row mt-3">
+														<div className="col-2">
+															<img src="/images/greenTick.svg" alt="" />
+														</div>
+														<div className="col-10 ps-0">{item.t}</div>
+													</li>
+												);
+											})}
 										</ul>
 									</div>
 								</div>

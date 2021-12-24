@@ -1,7 +1,131 @@
 import React from "react";
 
-
 const Prices = () => {
+	const pricing = {
+		basic: [
+			{
+				t: "多流媒体",
+				m: "(在20个以上的平台进行直播)",
+			},
+			{
+				t: "2个自定义RTMP目的地",
+				m: "(添加2个自定义rtmp链接)",
+			},
+			{
+				t: "邀请5位嘉宾",
+				m: "(在串流上邀请3位嘉宾)",
+			},
+			{
+				t: "移除背景",
+				m: "(移除您不喜欢的背景)",
+			},
+			{
+				t: "视觉效果",
+				m: "(动态图片、图片)",
+			},
+			{
+				t: "预录视频",
+				m: "(上传预先录制的视频)",
+			},
+			{
+				t: "屏幕共享",
+				m: null,
+			},
+			{
+				t: "720p 分辨率",
+				m: "(720p的串流)",
+			},
+			{
+				t: "1名团队成员",
+				m: "(添加1名团队成员)",
+			},
+			{
+				t: "3GB媒体存储空间",
+				m: null,
+			},
+			{
+				t: "兼容Zoom OBS和其他编码器",
+				m: null,
+			},
+		],
+		professional: [
+			{
+				t: "基本串流的功能再升级",
+				m: null,
+			},
+			{
+				t: "多流媒体",
+				m: null,
+			},
+			{
+				t: "5个自定义rtmp",
+				m: "(添加5个自定义rtmp链接)",
+			},
+			{
+				t: "邀请10位嘉宾",
+				m: "(10位成员同时在屏幕上)",
+			},
+			{
+				t: "1080p全高清画质",
+				m: "(1080p全高清画质串流)",
+			},
+			{
+				t: "云GPU",
+				m: null,
+			},
+			{
+				t: "特别支持",
+				m: null,
+			},
+			{
+				t: "故障安全",
+				m: "(直播过程中可能会出现任何问题，如果浏览器停止运作，我们将保留1分钟的直播活动)",
+			},
+			{
+				t: "15GB媒体存储空间",
+				m: null,
+			},
+			{
+				t: "4名团队成员",
+				m: "(可添加4个座位)",
+			},
+		],
+		commercial: [
+			{
+				t: "专业串流的功能再升级",
+				m: null,
+			},
+			{
+				t: "10个自定义RTMP",
+				m: null,
+			},
+			{
+				t: "可邀请15位嘉宾加入屏幕",
+				m: null,
+			},
+			{
+				t: "专属支持",
+				m: null,
+			},
+			{
+				t: "云GPU",
+				m: "(我们将添加自定义GPU至您的账户)",
+			},
+			{
+				t: "云录制",
+				m: null,
+			},
+			{
+				t: "60GB媒体存储空间",
+				m: null,
+			},
+			{
+				t: "6名团队成员",
+				m: "(可添加6个座位)",
+			},
+		],
+	};
+
 	return (
 		<div className="prices_container">
 			<div className="page_container">
@@ -43,92 +167,16 @@ const Prices = () => {
 										<hr className="my-5" />
 
 										<ul className="list-unstyled">
-											<li className="row">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													多流媒体 (在20个以上的平台进行直播)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													2个自定义RTMP目的地 (添加2个自定义rtmp链接)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													邀请5位嘉宾 (在串流上邀请3位嘉宾)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													移除背景 (移除您不喜欢的背景)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													视觉效果 (动态图片、图片col-10)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													预录视频 (上传预先录制的视频)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">屏幕共享col-10 </div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													720p 分辨率 (720p的串流col-10)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													1名团队成员 (添加1名团队成员)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													3GB媒体存储空间 col-10
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													兼容Zoom、OBS和其他编码器col-10
-												</div>
-											</li>
+											{pricing.basic.map((item, i) => {
+												return (
+													<li key={i} className="row mt-3">
+														<div className="col-2">
+															<img src="/images/greenTick.svg" alt="" />
+														</div>
+														<div className="col-10 ps-0">{item.t}</div>
+													</li>
+												);
+											})}
 										</ul>
 									</div>
 								</div>
@@ -143,81 +191,16 @@ const Prices = () => {
 										<hr className="my-5" />
 
 										<ul className="list-unstyled">
-											<li className="row">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													基本串流的功能再升级col-10
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">多流媒体col-10 </div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													5个自定义rtmp (添加5个自定义rtmp链接)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													邀请10位嘉宾 (10位成员同时在屏幕上)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													1080p全高清画质(1080p全高清画质串流)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">云GPUcol-10 </div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">特别支持col-10 </div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													故障安全
-													(直播过程中可能会出现任何问题，如果浏览器停止运作，我们将保留1分钟的直播活动)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													15GB媒体存储空间col-10
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													4名团队成员 (可添加4个座位)
-												</div>
-											</li>
+											{pricing.commercial.map((item, i) => {
+												return (
+													<li key={i} className="row mt-3">
+														<div className="col-2">
+															<img src="/images/greenTick.svg" alt="" />
+														</div>
+														<div className="col-10 ps-0">{item.t}</div>
+													</li>
+												);
+											})}
 										</ul>
 									</div>
 								</div>
@@ -232,64 +215,16 @@ const Prices = () => {
 										<hr className="my-5" />
 
 										<ul className="list-unstyled">
-											<li className="row">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													专业串流的功能再升级col-10
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">10个自定义RTMPcol-10 </div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													可邀请15位嘉宾加入屏幕col-10
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">专属支持col-10 </div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													云GPU (我们将添加自定义GPU至您的账户)
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">云录制col-10 </div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													60GB媒体存储空间col-10
-												</div>
-											</li>
-											<li className="row mt-3">
-												<div className="col-2">
-													<img src="/images/greenTick.svg" alt="" />
-												</div>
-												<div className="col-10 ps-0">
-													6名团队成员 (可添加6个座位)
-												</div>
-											</li>
+											{pricing.professional.map((item, i) => {
+												return (
+													<li key={i} className="row mt-3">
+														<div className="col-2">
+															<img src="/images/greenTick.svg" alt="" />
+														</div>
+														<div className="col-10 ps-0">{item.t}</div>
+													</li>
+												);
+											})}
 										</ul>
 									</div>
 								</div>

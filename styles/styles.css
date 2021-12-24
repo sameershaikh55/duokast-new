@@ -503,7 +503,7 @@ html {
 }
 
 .prices_container .price_card {
-  min-height: 920px;
+  min-height: 780px;
 }
 
 .prices_container .price_card button {
@@ -511,7 +511,7 @@ html {
 }
 
 .prices_container .price_card2 {
-  min-height: 920px;
+  min-height: 780px;
   border-top: 5px solid #00c4cc;
   border-radius: 6px;
 }
@@ -521,15 +521,15 @@ html {
 }
 
 .prices_container .price_card2.chinese {
-  min-height: 850px;
+  min-height: 780px;
 }
 
 .prices_container .price_card {
-  min-height: 920px;
+  min-height: 780px;
 }
 
 .prices_container .price_card.chinese {
-  min-height: 850px;
+  min-height: 780px;
 }
 
 .prices_container .green_bg {

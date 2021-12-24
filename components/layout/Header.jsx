@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = ({ ClickEvent, isOpen, isEnglish, setIsEnglish }) => {
+	const router = useRouter();
+
 	useEffect(() => {
 		window.addEventListener("scroll", function () {
 			var header = document.querySelector(".header_container");
@@ -13,6 +16,25 @@ const Header = ({ ClickEvent, isOpen, isEnglish, setIsEnglish }) => {
 			}
 		});
 	}, []);
+
+	const navigations = [
+		{
+			l: "/",
+			t: "Home",
+		},
+		{
+			l: "/blogs",
+			t: "Blogs",
+		},
+		{
+			l: "/about",
+			t: "About",
+		},
+		{
+			l: "/pricing",
+			t: "Price",
+		},
+	];
 
 	return (
 		<div className="header_container">
@@ -43,26 +65,27 @@ const Header = ({ ClickEvent, isOpen, isEnglish, setIsEnglish }) => {
 
 						<div className="navigation d-none d-md-block">
 							<ul className="d-flex align-items-center list-unstyled mb-0">
-								<li>
-									<Link href="/">Home</Link>
-								</li>
-								<li className="ms-4">
-									<Link href="/blogs">Blogs</Link>
-								</li>
-								<li className="mx-4">
-									<Link href="/about">About</Link>
-								</li>
-								<li>
-									<Link href="/pricing">Price</Link>
-								</li>
+								{navigations.map((item, i) => {
+									return (
+										<li
+											key={i}
+											className={`${i !== 0 && "ms-4"} ${
+												router.pathname === item.l && "fw600"
+											}`}
+										>
+											<Link href={item.l}>{item.t}</Link>
+										</li>
+									);
+								})}
 							</ul>
 						</div>
 
 						<div className="buttons_cont d-none d-md-flex">
-							<button onClick={() => setIsEnglish(!isEnglish)}>
+							<button className="px-3" onClick={() => setIsEnglish(!isEnglish)}>
 								{(isEnglish && "Chinese") || "English"}
 							</button>
 							<button className="ms-3">Login</button>
+							<button className="ms-3">Sign up</button>
 						</div>
 					</div>
 				</div>
