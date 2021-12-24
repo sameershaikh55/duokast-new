@@ -110,7 +110,7 @@ const Footer = () => {
 								<div className="col-12">
 									<div className="copy_write d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-between">
 										<p className="mb-0 text-white">
-											2020 Copyright, All rights Reservecd
+											2020 Copyright, All rights Reserved
 										</p>
 										<div className="mt-2 mt-md-0 text-white">
 											[沪 ICP 备 2020036420 号]

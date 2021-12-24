@@ -228,6 +228,18 @@ html {
 	overflow-x: hidden;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
+
+	.buttons_cont {
+		button {
+			background-color: #00c4cc;
+			color: #fff;
+			border: none;
+			width: 90px;
+			height: 35px;
+			border-radius: 50px;
+			font-size: 16px;
+		}
+	}
 }
 
 .SideBarContainer .logo {
@@ -330,6 +342,15 @@ html {
 			height: 40px;
 			border-radius: 50px;
 		}
+	}
+
+	.lang-change-mobile {
+		background-color: #00c4cc;
+		color: #fff;
+		border: none;
+		width: 70px;
+		height: 33px;
+		border-radius: 50px;
 	}
 }
 

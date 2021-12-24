@@ -37,7 +37,12 @@ export default function Pricing() {
 						<PricesEn />
 						<NetworkEn />
 						<PricingTableEn />
-						<StatesEn />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						{/* <StatesEn /> */}
 						<UnderStatesEn />
 						<AboutContactEn />
 						<br />
@@ -55,7 +60,12 @@ export default function Pricing() {
 						<Prices />
 						<Network />
 						<PricingTable />
-						<States />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						{/* <States /> */}
 						<UnderStates />
 						<AboutContact />
 						<br />

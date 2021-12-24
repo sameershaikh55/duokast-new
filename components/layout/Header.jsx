@@ -26,10 +26,17 @@ const Header = ({ ClickEvent, isOpen, isEnglish, setIsEnglish }) => {
 							</div>
 						</Link>
 
-						<div className="d-block d-md-none">
+						<div className="d-flex align-items-center d-md-none">
+							<button
+								onClick={() => setIsEnglish(!isEnglish)}
+								className="me-2 lang-change-mobile"
+							>
+								{(isEnglish && "Chinese") || "English"}
+							</button>
+
 							<GiHamburgerMenu
 								onClick={ClickEvent}
-								fontSize="2rem"
+								fontSize="2.5rem"
 								color="#000"
 							/>
 						</div>

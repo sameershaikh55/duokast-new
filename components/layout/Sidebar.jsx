@@ -34,6 +34,12 @@ const Sidebar = ({ isOpen, ClickEvent, isEnglish, setIsEnglish }) => {
 						Price
 					</Link>
 				</li>
+				<li className="buttons_cont">
+					<button onClick={() => setIsEnglish(!isEnglish)}>
+						{(isEnglish && "Chinese") || "English"}
+					</button>
+					<button className="ms-3">Login</button>
+				</li>
 			</ul>
 		</div>
 	);
