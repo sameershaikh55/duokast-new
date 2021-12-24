@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import sliderImg from "../../assets/images/slider/i1.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
